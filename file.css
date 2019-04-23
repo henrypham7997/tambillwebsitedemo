@@ -1,0 +1,965 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --myfont: 'Sarabun', sans-serif;
+    --menufont: 'Varela Round', sans-serif;
+    --slidefont: 'Charmonman', cursive;
+    --tambillfont: 'Pridi', serif;
+    /* --mycolor: #00b4d9; */
+    --mycolor: #00cc6a;
+    --darkcolor: rgba(34, 32, 32, 0.705);
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+/* menu */
+
+nav.navbar.navbar-expand-sm {
+    box-shadow: 0 0 10px 0 #00000054;
+}
+
+button.navbar-toggler.d-lg-none {
+    border: 2px solid var(--mycolor);
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    outline: none;
+}
+
+i.fa.fa-bars {
+    color: var(--mycolor);
+}
+
+a.link {
+    color: var(--mycolor);
+    padding-right: 30px;
+    font-family: var(--menufont);
+    font-weight: 700;
+    color: var(--darkcolor);
+}
+
+a.link:hover {
+    text-decoration: none;
+    color: var(--mycolor);
+}
+
+@media (max-width: 576px) {
+    li.nav-item {
+        line-height: 40px;
+        width: 100%;
+    }
+    li.nav-item:hover {
+        background: var(--mycolor);
+        padding: 0px;
+    }
+    li.nav-item:hover a.link {
+        color: white;
+    }
+    a.link {
+        display: block;
+        padding-left: 10px;
+    }
+}
+
+/* xong menu */
+
+/* slide */
+
+/* xu ly text responvsive */
+
+@media(max-width: 576px) {
+    div#carouselId img {
+        background-size: contain;
+        width: 100%;
+        height: 80vmin;
+    }
+    div#carouselId h5 {
+        font-size: 20px;
+    }
+    div#carouselId h2 {
+        font-size: 30px
+    }
+    div#carouselId p {
+        font-size: 14px;
+    }
+    div#carouselId .carousel-caption {
+        bottom: 5%;
+    }
+}
+
+@media(min-width: 576px) {
+    div#carouselId img {
+        background-size: contain;
+        width: 100%;
+        height: 80vmin;
+    }
+    div#carouselId h5 {
+        font-size: 30px;
+    }
+    div#carouselId h2 {
+        font-size: 45px;
+    }
+    div#carouselId p {
+        font-size: 21px;
+    }
+    div#carouselId .carousel-caption {
+        bottom: 10%;
+    }
+}
+
+@media(min-width: 768px) {
+    div#carouselId img {
+        background-size: contain;
+        width: 100%;
+        height: 80vmin;
+    }
+    div#carouselId h5 {
+        font-size: 40px;
+    }
+    div#carouselId h2 {
+        font-size: 60px;
+    }
+    div#carouselId p {
+        font-size: 28px;
+    }
+    div#carouselId .carousel-caption {
+        bottom: 15%;
+    }
+}
+
+@media(min-width: 992px) {
+    div#carouselId img {
+        background-size: contain;
+        width: 100%;
+        height: 80vmin;
+    }
+    div#carouselId h5 {
+        font-size: 50px;
+    }
+    div#carouselId h2 {
+        font-size: 75px
+    }
+    div#carouselId p {
+        font-size: 35px;
+    }
+    div#carouselId .carousel-caption {
+        bottom: 20%;
+    }
+}
+
+div#carouselId .cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #0c0808;
+    opacity: 0.6;
+}
+
+div#carouselId h5, div#carouselId p {
+    font-family: var(--slidefont);
+}
+
+div#carouselId h2 {
+    font-family: var(--tambillfont);
+    font-style: italic;
+    font-weight: 700;
+}
+
+div#carouselId ul li {
+    list-style: none;
+    display: inline;
+    padding-left: 5px;
+}
+
+div#carouselId ul li a.social {
+    display: inline-block;
+    font-size: 20px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    text-align: center;
+    line-height: 37px;
+    transition: 0.2s;
+}
+
+div#carouselId ul li a.social.facebook:hover {
+    background: #3b5999;
+    color: white;
+}
+
+div#carouselId ul li a.social.twitter:hover {
+    background: #4a9cec;
+    color: white;
+}
+
+div#carouselId ul li a.social.instagram:hover {
+    background: #d6274d;
+    color: white;
+}
+
+div#carouselId ul li a.social.linkedin:hover {
+    background: #1260a2;
+    color: white;
+}
+
+div#carouselId ul li a.social.google:hover {
+    background: #ce332a;
+    color: white;
+}
+
+/* xong phan text + carosel */
+
+/* phan thong tin */
+
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about img {
+    width: 100%;
+    height: auto;
+    border: 10px solid white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+}
+
+.about .information {
+    padding-top: 5px;
+}
+
+.about .information h3 {
+    font-family: var(--menufont);
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--darkcolor);
+}
+
+.about .information p {
+    font-family: var(--myfont);
+    color: var(--darkcolor);
+}
+
+.about .information ul li {
+    list-style: none;
+    /* padding-top:10px; */
+    display: inline-flex;
+    width: 100%;
+}
+
+.about .information ul li h4 {
+    width: 120px;
+    font-size: 15px;
+    font-family: var(--myfont);
+    font-weight: 800;
+    color: var(--darkcolor);
+}
+
+.about .information ul li h4.s {
+    width: 50px;
+    font-family: var(--myfont);
+    color: var(--darkcolor);
+}
+
+.about .information ul li p {
+    font-family: var(--myfont);
+    font-size: 15px;
+    color: var(--darkcolor);
+}
+
+.about .information .downloadCV {
+    display: flex;
+}
+
+.about .information a.EN {
+    display: block;
+    width: 200px;
+    height: 45px;
+    background: var(--mycolor);
+    text-decoration: none;
+}
+
+.about .information .downloadCV a.EN p {
+    font-family: var(--myfont);
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: white;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+.about .information .downloadCV a.EN, .about .information .downloadCV a.VI {
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.about .information .downloadCV a.EN p::before {
+    content: "\f0c6";
+    display: inline-block;
+    padding-right: 10px;
+    font: normal normal normal 16px/1 FontAwesome;
+}
+
+.about .information a.VI {
+    display: block;
+    width: 200px;
+    height: 45px;
+    background: #ec4343;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.about .information .downloadCV a.VI p {
+    font-family: var(--myfont);
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: white;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+.about .information .downloadCV a.VI p::before {
+    content: "\f0c6";
+    display: inline-block;
+    padding-right: 10px;
+    font: normal normal normal 16px/1 FontAwesome;
+}
+
+.about .information .downloadCV a.EN:hover {
+    box-shadow: 0px 0px 21px -5px rgba(0, 0, 0, 0.45);
+}
+
+.about .information .downloadCV a.VI:hover {
+    box-shadow: 0px 0px 21px -5px rgba(0, 0, 0, 0.45);
+}
+
+.about img {
+    border-radius: 5px;
+}
+
+/* xong phan thong tin */
+
+/* phan service */
+
+.service {
+    background: #f3f5f3bd;
+}
+
+.service h3.title, .skill .container h3, .other .container h3, footer h3 {
+    text-align: center;
+    font-family: var(--menufont);
+    font-weight: 900;
+    display: block;
+    padding-top: 50px;
+    color: var(--darkcolor);
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.service .row {
+    padding-bottom: 40px;
+}
+
+.service .oneService {
+    background: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    transition: 0.2s;
+    margin-bottom: 30px;
+}
+
+.service .oneService:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+}
+
+.service .oneService i {
+    display: block;
+    padding: 40px 0 30px 0;
+    color: var(--mycolor);
+    font-size: 35px;
+}
+
+.service .oneService h4 {
+    display: block;
+    padding-bottom: 30px;
+    color: var(--darkcolor);
+    font-family: var(--myfont);
+    font-weight: 800;
+    font-size: 20px;
+    width: 60%;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.service .oneService h4:hover {
+    color: var(--mycolor);
+}
+
+.service .oneService p {
+    display: block;
+    padding-bottom: 40px;
+    color: var(--darkcolor);
+    font-family: var(--myfont);
+    font-size: 15px;
+    width: 50%;
+    margin: auto;
+}
+
+/* xong phan service */
+
+/* phan resume */
+
+.resume {
+    padding-top: 50px;
+}
+
+.resume .row {
+    padding-bottom: 40px;
+}
+
+.resume .bigBlock {
+    border-left: 1.2px solid #d1d1d1;
+    margin-left: 20px;
+}
+
+.resume .bigBlock h3 {
+    color: var(--darkcolor);
+    font-weight: 700;
+    font-size: 25px;
+    font-family: var(--menufont);
+}
+
+.resume .bigBlock h3::before {
+    content: "\f19d";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: var(--mycolor);
+    color: white;
+    font-size: 25px;
+    font: normal normal normal 16px/1 FontAwesome;
+    top: 0;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+
+.resume .bigBlock h3._2::before {
+    content: "\f109";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: var(--mycolor);
+    color: white;
+    font-size: 25px;
+    font: normal normal normal 16px/1 FontAwesome;
+    top: 0;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+
+.resume .smallBlock {
+    background: #f3f5f3bd;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+
+.resume .smallBlock h5 {
+    display: block;
+    margin-left: 15px;
+    font-weight: bold;
+    font-family: var(--myfont);
+    color: #3e3838e3;
+    font-size: 15px;
+    padding: 20px 0 10px 0;
+}
+
+.resume .smallBlock h5::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: 2px solid var(--mycolor);
+    border-radius: 50%;
+    transform: translateX(-45px);
+}
+
+.resume .smallBlock span {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-left: 25px;
+    font-weight: 500;
+    color: var(--darkcolor);
+    font-family: var(--myfont);
+    color: var(--darkcolor);
+    font-size: 12px;
+    padding: 0 0 10px 0;
+}
+
+.resume .smallBlock p {
+    display: block;
+    width: 85%;
+    margin: auto;
+    margin-left: 25px;
+    font-weight: 500;
+    color: var(--darkcolor);
+    font-family: var(--myfont);
+    color: var(--darkcolor);
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+/* xong phan resume */
+
+/* phan skill */
+
+.skill {
+    background: #f3f5f3bd;
+}
+
+/* .skill .choiseSkill{
+    margin: auto;
+} */
+
+.skill ul li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.skill ul li h5 {
+    display: block;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    background: var(--mycolor);
+    font-family: var(--myfont);
+    font-weight: 500;
+    font-size: 13px;
+    color: white;
+    line-height: 40px;
+    cursor: pointer;
+    border: 1px solid var(--mycolor);
+}
+
+.skill ul li h5.active {
+    color: var(--mycolor);
+    background: none;
+}
+
+.skill ul li button:focus {
+    border: none;
+}
+
+.skill .row {
+    padding-bottom: 50px;
+}
+
+/* responsive */
+
+@media(min-width:320px) {
+    .skill .oneSkill {
+        position: relative;
+        width: 100%;
+        height: 15rem;
+    }
+}
+
+@media(min-width:576px) {
+    .skill .oneSkill {
+        position: relative;
+        width: 100%;
+        height: 18rem;
+    }
+}
+
+@media(min-width:768px) {
+    .skill .oneSkill {
+        position: relative;
+        width: 100%;
+        height: 12rem;
+    }
+}
+
+@media(min-width:992px) {
+    .skill .oneSkill {
+        position: relative;
+        width: 100%;
+        height: 11rem;
+    }
+}
+
+@media(min-width:1200px) {
+    .skill .oneSkill {
+        position: relative;
+        width: 100%;
+        height: 13rem;
+    }
+}
+
+.skill .oneSkill {
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.skill .oneSkill .content {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    transform: skew(20deg);
+    background: white;
+    border-radius: 20px;
+    right: -110%;
+    top: 10%;
+    transition: 0.5s;
+}
+
+.skill .oneSkill:hover .content {
+    right: -15%;
+}
+
+.skill .oneSkill:focus .content {
+    right: -15%;
+}
+
+.skill .oneSkill .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    transition: 0.5s;
+}
+
+.skill .oneSkill:hover .overlay {
+    background: #00cc6aba;
+}
+
+.skill .oneSkill .content h5, .skill .oneSkill .content p {
+    transform: skew(-20deg);
+}
+
+.skill .oneSkill .content h5 {
+    margin-left: 20px;
+    font-family: var(--myfont);
+    font-size: 18px;
+    color: var(--darkcolor);
+    font-weight: 700;
+    margin-top: 7px;
+}
+
+.skill .oneSkill .content h5::before {
+    content: "\f005";
+    display: inline-block;
+    padding-right: 5px;
+    font: normal normal normal 18px/1 FontAwesome;
+}
+
+.skill .oneSkill .content p {
+    margin-left: 20px;
+    font-family: var(--myfont);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--darkcolor);
+    margin-bottom: 2px;
+}
+
+.skill .oneSkill .content p::before {
+    content: "\f00c";
+    display: inline-block;
+    padding-right: 5px;
+    font: normal normal normal 13px/1 FontAwesome;
+}
+
+.skill .oneSkill .content p.row1 {
+    width: 80%;
+}
+
+.skill .oneSkill .content p.row2 {
+    width: 78%;
+}
+
+.skill .oneSkill .content p.row3 {
+    width: 76%;
+}
+
+.skill .oneSkill .content p.row4 {
+    width: 74%;
+}
+
+.skill .oneSkill .content p.row5 {
+    width: 72%;
+}
+
+/* xong phan skill */
+
+/* phan other */
+
+.other p.my {
+    display: block;
+    width: 80%;
+    margin: auto;
+    font-family: var(--myfont);
+    color: var(--darkcolor);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.other .col-xs-12.col-lg-6.col-md-6.col-sm-6 {
+    padding: 0px;
+}
+
+.other .right {
+    width: 90%;
+}
+
+.other .right .rightTop {
+    display: flex;
+}
+
+.other .right .rightTop .field {
+    margin-left: 30px;
+    width: 50%;
+}
+
+.other .right .rightTop .fieldText {
+    display: inline-flex;
+}
+
+.other .right .rightTop .fieldText p {
+    font-family: var(--myfont);
+    font-size: 18px;
+    color: var(--darkcolor);
+    font-weight: 800;
+}
+
+.other .right .rightTop .fieldText p.fileBlue {
+    display: block;
+    margin-left: 5px;
+    color: var(--mycolor);
+}
+
+.other .right .rightTop .field p.position {
+    font-family: var(--myfont);
+    font-style: italic;
+    font-size: 15px;
+    color: var(--darkcolor);
+}
+
+.other .right .rightTop .fieldText p, .other .right .rightTop .field p {
+    margin-bottom: 0px;
+}
+
+.other .right .rightTop::before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    background: var(--mycolor);
+    border: 5px solid var(--darkcolor);
+    border-radius: 50%;
+    transform: translateX(-45%) translateY(35%);
+}
+
+.other .right .rightBottom p::before {
+    content: "\f0c6";
+    display: inline-block;
+    padding-right: 10px;
+    color: var(--mycolor);
+    font: normal normal normal 20px/1 FontAwesome;
+}
+
+.other .right .rightBottom {
+    border-left: 1px solid var(--darkcolor);
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.other .right .rightBottom p {
+    display: block;
+    margin-left: 50px;
+    font-family: var(--myfont);
+    font-size: 13px;
+    color: var(--darkcolor);
+}
+
+.other .right .time {
+    width: 50%;
+}
+
+.other .right .time p.textTime {
+    display: block;
+    width: 50%;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background: var(--mycolor);
+    font-family: var(--myfont);
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-top: 3%;
+}
+
+.other .container .left {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.other .container .left .nowText {
+    background-color: var(--mycolor);
+    color: white;
+    margin-top: 7px;
+}
+
+.other .container .left .nowText p.top {
+    margin: auto;
+    padding: 35px 25px 30px 25px;
+    font-family: var(--myfont);
+    font-style: italic;
+    font-size: 18px;
+}
+
+.other .container .left .nowText p.bot {
+    margin: auto;
+    padding: 0px 25px 30px 25px;
+    font-family: var(--myfont);
+    font-size: 13px;
+}
+
+.other .container .left h5 {
+    display: block;
+    margin-top: 20px;
+    font-family: var(--myfont);
+    font-size: 18px;
+    color: var(--darkcolor);
+    font-weight: 800;
+}
+
+.other .container .left h5::after {
+    content: 'SKILLS';
+    display: inline-block;
+    font-family: var(--myfont);
+    font-size: 18px;
+    margin-left: 5px;
+    color: var(--mycolor);
+    font-weight: 800;
+}
+
+.other .container .left .one p.skillName {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 14px;
+    font-family: var(--myfont);
+    color: var(--darkcolor);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.other .container .row {
+    padding-bottom: 30px;
+}
+
+.other .container .left .one .skillBox {
+    width: 100%;
+    height: 30px;
+    background: var(--darkcolor);
+}
+
+.other .container h4.myTitle {
+    display: block;
+    text-align: center;
+    font-family: var(--myfont);
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--darkcolor);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.other .container h4.myTitle2 {
+    display: block;
+    text-align: center;
+    font-family: var(--myfont);
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--darkcolor);
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.other .container h4.myTitle::after {
+    content: 'SELF';
+    color: var(--mycolor);
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.other .container h4.myTitle2::after {
+    content: 'GOALS';
+    color: var(--mycolor);
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* xong phan other */
+
+footer {
+    background-color: #181d21;
+    color: white;
+}
+
+footer .row {
+    padding-top: 0px;
+}
+
+footer h3 {
+    color: white;
+}
+
+footer h5 {
+    display: block;
+    font-family: var(--myfont);
+    font-size: 15px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+footer i {
+    width: 100%;
+    height: 100%;
+    
+}
+
+footer i.icon {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: var(--mycolor);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    margin: auto;
+    margin-bottom: 15px;
+}
